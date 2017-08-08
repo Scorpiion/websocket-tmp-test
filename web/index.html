@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vane - Chat</title>
+    <link type="text/css" rel="stylesheet" href="css/pure-min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div chat-app class="pure-g-r">
+      <div id="chat-box" class="pure-u-1-1 well content">
+        <form class="pure-form">
+          <fieldset>
+            <legend class="form-legend">Vane - Websocket chat</legend>
+          </fieldset>
+        </form>
+
+        <div id="messages-box" class="pure-g"></div>
+      </div>
+
+      <div id="input-box" class="pure-u-1-1 content">
+        <form class="pure-form pure-g">
+          <div class="pure-u-1-4">
+            <input class="pure-input-1" id="user-input" placeholder="User">
+          </div>
+          <div class="pure-u-3-4">
+            <input class="pure-input-1" id="message-input" placeholder="Message">
+          </div>
+          <button type="button" class="pure-u-1-1 pure-button pure-button-primary" id="send-btn">Send</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Dart -->
+    <script async type="application/dart" src="main.dart"></script>
+    <script async src="packages/browser/dart.js?version=5"></script>
+  </body>
+</html>
+

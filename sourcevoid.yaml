@@ -1,0 +1,9 @@
+runtime: dart
+
+build:
+  - pub get
+  - pub build
+
+start: dart bin/server.dart
+
+
